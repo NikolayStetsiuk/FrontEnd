@@ -10,7 +10,7 @@ export class ItemService {
 
   constructor(private http: HttpClient) { }
 
-  baseUrl : string = 'https://social-network.samuraijs.com/api/1.0/users';
+  baseUrl : string = 'http://localhost:8080/users';
 
   public getItem(): Observable<Item[]>{
     return this.http.get<Item[]>(this.baseUrl);
